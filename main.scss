@@ -1,53 +1,10 @@
-$class-name: item;
-$random: 5;
+@import "helpers/variables";
+@import "helpers/helpers";
+@import "helpers/mixins";
 
-@for $i from 1 through 4 {
-	.#{$class-name}-#{$i} {
-		width: 60px + $i;
-	} 
-}
+@import "components/buttons";
+@import "components/footer";
+@import "components/navigation";
 
-@mixin button($color, $size) {
-	width: $size;
-	height: $size / 2;
-	color: $color;
-	border: 1px solid $color;
-
-	@if $color == #e84610 {
-		background-color: #fff;
-	}
-}
-
-@mixin unicornify {
-	background-color: pink;
-	color: white;
-	@content;
-	font-size: 30px;
-	font-weight: bold;
-} 
-
-.btn {
-	@include button(#e84610, 200px);
-}
-
-h1 {
-	@if $random >5 {
-		color: blue;
-	} @else if $random == 3 {
-		color: purple;
-	} @else {
-		color: orange;
-	}	
-
-	@if 1 + 1 == 2 {
-		border: 1px solid #000;
-	}
-}
-
-p {
-	@include unicornify {
-		border: 1px solid pink;
-		border-radius: 100%;
-		text-align: center;
-	}
-}
+@import "pages/about";
+@import "pages/home";
