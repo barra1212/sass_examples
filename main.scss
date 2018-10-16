@@ -1,0 +1,60 @@
+/*.wrapper {
+	.main {
+		.container {
+			.article {
+				.post {
+					p {
+						color: blue;
+					}
+				}
+			}
+
+		}
+	}
+}*/
+
+.main {
+	.wrapper & {
+		background-color: yellow;
+		width: 300px;
+		height: 300px;
+	}
+}
+
+p {
+    
+  font: {
+    family: Arial;
+    size: 30px;
+    weight: bold;
+  }
+  
+  text: {
+      align: center;
+      transform: uppercase;
+  }
+}
+
+%backgroundImage {
+    background: {
+        size: cover;
+        position: center center;
+        repeat: no-repeat;
+    }
+}
+
+div {
+	@extend %backgroundImage;
+}
+
+.container {
+	background-image: url("https://dummyimage.com/450x250/f00/fff");
+}
+
+.article {
+	background-image: url("https://dummyimage.com/450x250/000/fff");
+}
+
+.post {
+	background-image: url("https://dummyimage.com/450x250/ddd/fff");
+}

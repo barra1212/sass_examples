@@ -1,9 +1,41 @@
-.wrapper {
-  width: 200px;
-  height: 200px;
-  background-color: #e84610; }
-  .wrapper p {
-    font-size: 30px;
-    color: #fff; }
+/*.wrapper {
+	.main {
+		.container {
+			.article {
+				.post {
+					p {
+						color: blue;
+					}
+				}
+			}
+
+		}
+	}
+}*/
+.wrapper .main {
+  background-color: yellow;
+  width: 300px;
+  height: 300px; }
+
+p {
+  font-family: Arial;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase; }
+
+div {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+.container {
+  background-image: url("https://dummyimage.com/450x250/f00/fff"); }
+
+.article {
+  background-image: url("https://dummyimage.com/450x250/000/fff"); }
+
+.post {
+  background-image: url("https://dummyimage.com/450x250/ddd/fff"); }
 
 /*# sourceMappingURL=main.css.map */
