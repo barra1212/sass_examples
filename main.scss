@@ -1,60 +1,35 @@
-/*.wrapper {
-	.main {
-		.container {
-			.article {
-				.post {
-					p {
-						color: blue;
-					}
-				}
-			}
+$blue: #0997d3;
+$red: #e84610;
+$green: #bada55;
+$black: #000000;
+$white: #ffffff;
 
-		}
-	}
-}*/
+$colors: (
+	black: #000000,
+	red: #e84610,
+	green: #bada55
+);
 
-.main {
-	.wrapper & {
-		background-color: yellow;
-		width: 300px;
-		height: 300px;
-	}
-}
-
-p {
-    
-  font: {
-    family: Arial;
-    size: 30px;
-    weight: bold;
-  }
-  
-  text: {
-      align: center;
-      transform: uppercase;
+@each $key, $value in $colors {
+  .item-#{$key} {
+    background-color: $value;
   }
 }
 
-%backgroundImage {
-    background: {
-        size: cover;
-        position: center center;
-        repeat: no-repeat;
-    }
+body {
+	background-color: $black;
 }
 
 div {
-	@extend %backgroundImage;
+	border: 1px solid $black;
 }
 
-.container {
-	background-image: url("https://dummyimage.com/450x250/f00/fff");
+h1 {
+    color: $white;
 }
 
-.article {
-	background-image: url("https://dummyimage.com/450x250/000/fff");
-}
+$class: container;
 
-.post {
-	background-image: url("https://dummyimage.com/450x250/ddd/fff");
+div.#{$class} {
+	background-color: orange;
 }

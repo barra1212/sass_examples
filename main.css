@@ -1,41 +1,22 @@
-/*.wrapper {
-	.main {
-		.container {
-			.article {
-				.post {
-					p {
-						color: blue;
-					}
-				}
-			}
+.item-black {
+  background-color: #000000; }
 
-		}
-	}
-}*/
-.wrapper .main {
-  background-color: yellow;
-  width: 300px;
-  height: 300px; }
+.item-red {
+  background-color: #e84610; }
 
-p {
-  font-family: Arial;
-  font-size: 30px;
-  font-weight: bold;
-  text-align: center;
-  text-transform: uppercase; }
+.item-green {
+  background-color: #bada55; }
+
+body {
+  background-color: #000000; }
 
 div {
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat; }
+  border: 1px solid #000000; }
 
-.container {
-  background-image: url("https://dummyimage.com/450x250/f00/fff"); }
+h1 {
+  color: #ffffff; }
 
-.article {
-  background-image: url("https://dummyimage.com/450x250/000/fff"); }
-
-.post {
-  background-image: url("https://dummyimage.com/450x250/ddd/fff"); }
+div.container {
+  background-color: orange; }
 
 /*# sourceMappingURL=main.css.map */
